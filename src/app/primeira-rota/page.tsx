@@ -29,11 +29,11 @@ const PrimeiraRota = () => {
 
     return (
         <Suspense fallback={<div>Loading...</div>}>
-            <div className="flex flex-wrap justify-center p-2 gap-5">
-                <div className="flex flex-wrap justify-center p-2 gap-5w-full lg:w-3/4">
+            <div className="flex flex-wrap justify-center p-3 my-2 gap-5">
+                <div className="flex flex-wrap justify-center p-2 gap-8 w-full lg:w-3/4">
                     {characters.map((item) => {
                         return(
-                            <div key={item.id} className="w-[350px] border border-black rounded-md flex flex-col items-center p-2 gap-2">
+                            <div key={item.id} className="w-[310px] border border-black rounded-md flex flex-col items-center p-2 gap-1 shadow-2xl">
                                 <h2 className="text-3xl"><b>{item.name}</b></h2>
                                 <div>
                                     <Image src={item.image} alt="character image" height={10000} width={10000} className="w-auto h-[300px]" priority={true}></Image>
